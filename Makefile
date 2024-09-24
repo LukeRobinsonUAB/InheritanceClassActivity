@@ -8,7 +8,7 @@ CXXFLAGS = -Wall -Wextra -std=c++23
 # Target executable name
 TARGET = main
 # Source files
-SRCS = main.cpp animal.cpp
+SRCS = main.cpp animal.cpp shelter.cpp
 
 # Object files
 OBJS = $(SRCS:.cpp=.o)

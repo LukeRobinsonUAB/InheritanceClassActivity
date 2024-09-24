@@ -19,6 +19,10 @@ class Animal {
             return this->type;
         }
 
+        std::string getName() {
+            return this->name;
+        }
+
         void displayInfo () {
             std::cout << "age: " << this->age << " name: " << this->name << " Type: " << this->type << std::endl;
         }
