@@ -3,8 +3,8 @@
 
 # Compiler
 CXX = g++
-# Compiler flags
-CXXFLAGS = -Wall -Wextra -std=c++23
+# Compiler flags CXXFLAGS = -Wall -Wextra -std=c++23
+CXXFLAGS = -Wall -std=c++23
 # Target executable name
 TARGET = main
 # Source files
