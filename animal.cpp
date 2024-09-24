@@ -20,7 +20,7 @@ class Animal {
         }
 
         void displayInfo () {
-            std::cout << "age: " this.age << " name: " << this.name << " Type: " << this.type << endl;
+            std::cout << "age: " << this->age << " name: " << this->name << " Type: " << this->type << std::endl;
         }
 
 
