@@ -30,3 +30,65 @@ class Animal {
         std::string type;
 
 };
+
+class Dog : public Animal {
+    public:
+        Dog() {
+            int age = 0;
+            std::string name = "No name";
+            std::string type = "Animal";
+            std::string breed = "unknown";
+
+        }
+
+        Dog (int age, std::string name, std::string type, std::string breed) {
+            int age = age;
+            std::string name = name;
+            std::string type = type;
+            std::string breed = breed;
+        }
+
+        void displayInfo () {
+            std::cout << "age: " << this->age << " name: " << this->name << " Type: " << this->type <<  " breed: " << this->breed << std::endl;
+        }
+
+
+
+    private:
+        int age;
+        std::string name;
+        std::string type; 
+        std::string breed;
+
+};
+
+class Cat : public Animal {
+    public:
+        Cat() {
+            int age = 0;
+            std::string name = "No name";
+            std::string type = "Animal";
+            std::string breed = "unknown";
+
+        }
+
+        Cat (int age, std::string name, std::string type, std::string breed) {
+            int age = age;
+            std::string name = name;
+            std::string type = type;
+            std::string breed = breed;
+        }
+
+        void displayInfo () {
+            std::cout << "age: " << this->age << " name: " << this->name << " Type: " << this->type <<  " breed: " << this->breed << std::endl;
+        }
+
+
+
+    private:
+        int age;
+        std::string name;
+        std::string type; 
+        std::string breed;
+
+};
