@@ -23,13 +23,26 @@ int main () {
         switch (option)
         {
         case 1:
-            /* code */
+            char a = a;
+            cin >> a;
+            while (a != 'y' && a != 'n') {
+                cout << "specify age, name, breed? [y/n]" << endl;
+                if (a == 'y') {
+
+                }
+                else {
+                    
+                }
+            }
             break;
         case 2:
 
-            break;
+            break; 
         case 3:
-
+            cout << "Enter name of animal to be removed." << endl;
+            std::string name;
+            cin >> name;
+            shelter1.removeAnimal(name);
             break;
         case 4:
             shelter1.displayAnimals();
