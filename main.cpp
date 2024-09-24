@@ -36,13 +36,13 @@ int main () {
             }
             break;
         case 2:
-
+            cout << "test" << endl;
             break; 
         case 3:
             cout << "Enter name of animal to be removed." << endl;
-            std::string name;
-            cin >> name;
-            shelter1.removeAnimal(name);
+            std::string name1;
+            cin >> name1;
+            shelter1.removeAnimal(name1);
             break;
         case 4:
             shelter1.displayAnimals();
@@ -51,7 +51,7 @@ int main () {
             exit(0);
             break;
         default:
-
+            exit(0);
             break;
         }
 
