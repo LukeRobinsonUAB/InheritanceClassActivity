@@ -1,5 +1,5 @@
 #include <string>
-
+#include <iostream>
 class Animal {
     public:
         Animal() {
@@ -19,6 +19,9 @@ class Animal {
             return this->type;
         }
 
+        void displayInfo () {
+            std::cout << "age: " this.age << " name: " << this.name << " Type: " << this.type << endl;
+        }
 
 
     private:
