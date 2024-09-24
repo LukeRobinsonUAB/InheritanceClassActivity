@@ -1,9 +1,12 @@
 // g++ main.cpp -o main
 #include <iostream>
+#include "shelter.cpp"
 
 using namespace std;
 int main () {
     cout << "compiles!" << endl;
+
+    Shelter shelter1;
 
     while (true) {
 
@@ -29,7 +32,7 @@ int main () {
 
             break;
         case 4:
-
+            shelter1.displayAnimals();
             break;
         case 5:
 
