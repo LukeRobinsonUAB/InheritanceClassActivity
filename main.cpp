@@ -35,7 +35,7 @@ int main () {
             shelter1.displayAnimals();
             break;
         case 5:
-
+            exit(0);
             break;
         default:
 
