@@ -29,9 +29,18 @@ int main () {
                     cout << "specify age, name, breed? [y/n]" << endl;
                     cin >> a;
                     if (a == 'y') {
-                        
+                        int age;
+                        std::string name, breed;
+                        cout << "enter age:" << endl;
+                        cin >> age;
+                        cout << "enter name" << endl;
+                        cin >> name;
+                        cout << "enter breed" << endl;
+                        cin >> breed;
+                        //create animal obj add to shelter
                     }
                     else {
+                        //create animal obj default constructor add to shelter
                         
                     }
                 }
