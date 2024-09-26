@@ -11,7 +11,7 @@ class Shelter {
 public:
     void addAnimal(Animal* animal);
     void removeAnimal(const std::string& name);
-    void displayAnimals() const;
+    void displayAnimals();
     
     ~Shelter(); // Destructor
 

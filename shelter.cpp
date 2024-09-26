@@ -19,7 +19,7 @@ void Shelter::removeAnimal(const std::string& name) {
 }
 
 // Displays all animals in the shelter
-void Shelter::displayAnimals() const {
+void Shelter::displayAnimals() {
     if (animals.empty()) {
         std::cout << "No animals in the shelter.\n";
         return;

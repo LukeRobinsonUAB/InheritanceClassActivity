@@ -3,8 +3,7 @@
 #include "shelter.cpp"
 
 using namespace std;
-int main () {
-    cout << "compiles!" << endl;
+int main() {
 
     Shelter shelter1;
 
