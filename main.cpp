@@ -23,7 +23,7 @@ int main () {
         switch (option)
         {
         case 1:
-            char a = a;
+            char a = 'a';
             cin >> a;
             while (a != 'y' && a != 'n') {
                 cout << "specify age, name, breed? [y/n]" << endl;
