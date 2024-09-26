@@ -16,15 +16,15 @@
             std::string type = type2;
         }
 
-        Animal::std::string getType() {
+        std::string Animal::getType() {
             return this->type;
         }
 
-        Animal::std::string getName() {
+        std::string Animal::getName() {
             return this->name;
         }
 
-        Animal::void displayInfo () {
+        void Animal::displayInfo () {
             std::cout << "age: " << this->age << " name: " << this->name << " Type: " << this->type << std::endl;
         }
 
@@ -45,7 +45,7 @@
             std::string breed = breed2;
         }
 
-        Dog::void displayInfo () {
+        void Dog::displayInfo () {
             std::cout << "age: " << this->age << " name: " << this->name << " Type: " << this->type <<  " breed: " << this->breed << std::endl;
         }
 
@@ -64,6 +64,6 @@
             std::string breed = breed2;
         }
 
-        Cat::void displayInfo () {
+        void Cat::displayInfo () {
             std::cout << "age: " << this->age << " name: " << this->name << " Type: " << this->type <<  " breed: " << this->breed << std::endl;
         }
