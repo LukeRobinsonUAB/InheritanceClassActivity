@@ -1,36 +1,26 @@
-#include <vector>
-#include <string>
+#include "shelter.h"
 #include <iostream>
-#include "animal.cpp" //make interface animal.h instead?
+// Adds a new animal to the shelter
+void Shelter::addAnimal(animal* animal) {
+    animals.push_back(animal);
+}
 
-
-class Shelter {
-    public:
-        Shelter() {
-            std::vector<Animal> animalsVec;
-        }
-
-      
-    void addAnimal() {
-
-    }
-
-    void removeAnimal(std::string nameToRemove) {
-        for (int i = 0; i < animalsVec.size(); i++) {
-            std::string temp = animalsVec[i].getName();
-            if (!temp.compare(nameToRemove))
-                animalsVec.erase(animalsVec.begin() + i);
+// Removes an animal by name when an animal is adopted
+void Shelter::removeAnimal(const std::string& name) {
+    for (auto it = animals.begin(); it != animals.end(); ++it) {
+        if ((*it)->name == name) {
+            delete *it; // Free memory before removing the pointer
+            animals.erase(it);
+            std::cout << name << " has been adopted!\n";
+            return;
         }
     }
+    std::cout << "Animal not found!\n";
+}
 
-    void displayAnimals() {
-        for (Animal a : animalsVec)
-            a.displayInfo();
+// Displays all animals in the shelter
+void Shelter::displayAnimals() const {
+    if (animals.empty()) {
+        std::cout << "No animals in the shelter.\n";
+        return;
     }
-
-
-    private:
-        std::vector<Animal> animalsVec;
-
-
-};
