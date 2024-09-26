@@ -23,15 +23,17 @@ int main () {
         switch (option)
         {
         case 1:
-            char a = 'a';
-            cin >> a;
-            while (a != 'y' && a != 'n') {
-                cout << "specify age, name, breed? [y/n]" << endl;
-                if (a == 'y') {
-
-                }
-                else {
-                    
+            {
+                char a = 'a';
+                while (a != 'y' && a != 'n') {
+                    cout << "specify age, name, breed? [y/n]" << endl;
+                    cin >> a;
+                    if (a == 'y') {
+                        
+                    }
+                    else {
+                        
+                    }
                 }
             }
             break;
@@ -39,14 +41,18 @@ int main () {
             cout << "test" << endl;
             break; 
         case 3:
-            cout << "Enter name of animal to be removed." << endl;
-            std::string name1;
-            cin >> name1;
-            shelter1.removeAnimal(name1);
-            break;
+            {
+                cout << "Enter name of animal to be removed." << endl;
+                std::string name1;
+                //cin >> name1;
+                shelter1.removeAnimal("name1");
+                break;
+            }
         case 4:
-            shelter1.displayAnimals();
-            break;
+            {
+                shelter1.displayAnimals();
+                break;
+            }
         case 5:
             exit(0);
             break;
