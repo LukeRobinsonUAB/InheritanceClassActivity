@@ -8,12 +8,15 @@ using namespace std;
 
 class Adoption{
     public:
-    void adoptanimal();
-    void displayadoptoptions();
+    void adoptanimal(Animal* animal, std::string& adoptername, std::string& contactinfo);
+    void displayAdopterinfo();
+    void getAdoptioninfo();
+    void getAdoptiondetails();
+    
 
 
     private:
-    std::string name;
+    std::string adoptername;
     std::string contactinfo;
 
 };

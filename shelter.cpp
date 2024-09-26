@@ -1,7 +1,7 @@
 #include "shelter.h"
 #include <iostream>
 // Adds a new animal to the shelter
-void Shelter::addAnimal(animal* animal) {
+void Shelter::addAnimal(Animal* animal) {
     animals.push_back(animal);
 }
 
@@ -24,3 +24,4 @@ void Shelter::displayAnimals() const {
         std::cout << "No animals in the shelter.\n";
         return;
     }
+}
