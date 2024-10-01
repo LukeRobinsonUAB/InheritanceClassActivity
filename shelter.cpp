@@ -1,5 +1,10 @@
 #include "shelter.h"
 #include <iostream>
+
+Shelter::Shelter() {
+    animals = {};
+}
+
 // Adds a new animal to the shelter
 void Shelter::addAnimal(Animal* animal) {
     animals.push_back(animal);

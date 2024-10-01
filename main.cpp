@@ -5,7 +5,7 @@
 using namespace std;
 int main() {
 
-    Shelter shelter1;
+    Shelter shelter1 = new Shelter();
 
     while (true) {
 

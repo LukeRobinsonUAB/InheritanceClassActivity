@@ -13,6 +13,7 @@ public:
     void removeAnimal(const std::string& name);
     void displayAnimals();
     
+    Shelter();
     ~Shelter(); // Destructor
 
 
