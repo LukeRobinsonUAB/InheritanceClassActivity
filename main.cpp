@@ -1,11 +1,11 @@
 // g++ main.cpp -o main
 #include <iostream>
-#include "shelter.cpp"
+#include "shelter.h"
 
 using namespace std;
 int main() {
 
-    Shelter shelter1 = new Shelter();
+    Shelter* shelter1 = new Shelter();
 
     while (true) {
 
@@ -37,6 +37,8 @@ int main() {
                         cout << "enter breed" << endl;
                         cin >> breed;
                         //create animal obj add to shelter
+                        Dog* dog = new Dog(age, name, "dog", breed);
+                        shelter1->addAnimal(dog);
                     }
                     else {
                         //create animal obj default constructor add to shelter
@@ -53,12 +55,12 @@ int main() {
                 cout << "Enter name of animal to be removed." << endl;
                 std::string name1;
                 cin >> name1;
-                shelter1.removeAnimal(name1);
+                shelter1->removeAnimal(name1);
                 break;
             }
         case 4:
             {
-                shelter1.displayAnimals();
+                shelter1->displayAnimals();
                 break;
             }
         case 5:
