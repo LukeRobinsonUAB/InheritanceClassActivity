@@ -24,3 +24,7 @@ void Shelter::displayAnimals() {
         return;
     }
 }
+
+Shelter::~Shelter() {
+    std::cout << "destructor" << std::endl;
+}

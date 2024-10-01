@@ -13,7 +13,7 @@ class Animal {
 
         std::string getName();
 
-        void displayInfo ();
+        void displayInfo();
 
     private:
         int age;

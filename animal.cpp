@@ -4,16 +4,16 @@
 
 
         Animal::Animal() {
-            int age = 0;
-            std::string name = "No name";
-            std::string type = "Animal";
+            age = 0;
+            name = "No name";
+            type = "Animal";
 
         }
 
         Animal::Animal (int age2, std::string name2, std::string type2) {
-            int age = age2;
-            std::string name = name2;
-            std::string type = type2;
+            age = age2;
+            name = name2;
+            type = type2;
         }
 
         std::string Animal::getType() {
@@ -31,18 +31,18 @@
 
 
         Dog::Dog() {
-            int age = 0;
-            std::string name = "No name";
-            std::string type = "Animal";
-            std::string breed = "unknown";
+            age = 0;
+            name = "No name";
+            type = "dog";
+            breed = "unknown";
 
         }
 
         Dog::Dog(int age2, std::string name2, std::string type2, std::string breed2) {
-            int age = age2;
-            std::string name = name2;
-            std::string type = type2;
-            std::string breed = breed2;
+            age = age2;
+            name = name2;
+            type = type2;
+            breed = breed2;
         }
 
         void Dog::displayInfo () {
@@ -50,18 +50,18 @@
         }
 
         Cat::Cat() {
-            int age = 0;
-            std::string name = "No name";
-            std::string type = "Animal";
-            std::string breed = "unknown";
+            age = 0;
+            name = "No name";
+            type = "cat";
+            breed = "unknown";
 
         }
 
         Cat::Cat(int age2, std::string name2, std::string type2, std::string breed2) {
-            int age = age2;
-            std::string name = name2;
-            std::string type = type2;
-            std::string breed = breed2;
+            age = age2;
+            name = name2;
+            type = type2;
+            breed = breed2;
         }
 
         void Cat::displayInfo () {
