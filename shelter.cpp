@@ -8,8 +8,7 @@ void Shelter::addAnimal(Animal* animal) {
 // Removes an animal by name when an animal is adopted
 void Shelter::removeAnimal(const std::string& name) {
     for (auto it = animals.begin(); it != animals.end(); ++it) {
-        if ((*it)->name == name) { //use public getName method to access private field maybe
-            delete *it; // Free memory before removing the pointer
+        if ((*it)->getName() == name) { //use public getName method to access private field maybe
             animals.erase(it);
             std::cout << name << " has been adopted!\n";
             return;

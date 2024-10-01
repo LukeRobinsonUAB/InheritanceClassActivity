@@ -52,8 +52,8 @@ int main() {
             {
                 cout << "Enter name of animal to be removed." << endl;
                 std::string name1;
-                //cin >> name1;
-                shelter1.removeAnimal("name1");
+                cin >> name1;
+                shelter1.removeAnimal(name1);
                 break;
             }
         case 4:
